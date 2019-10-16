@@ -173,6 +173,10 @@ export class MutableAsset extends BaseAsset implements IMutableAsset {
     this.#asset = asset;
   }
 
+  get asset() {
+    return this.#asset;
+  }
+
   get ast(): ?AST {
     return this.#asset.ast;
   }
